@@ -5,6 +5,12 @@ public class BrownieNescau extends Brownie{
         super(nome, preco, sabor);
     }
 
+    @Override
+    public void addCarrinhoDeCompra() {
+        System.out.println("Adicionando um maravilhoso Brownie de Nescau no carrinho de compras");
+    }
+
+
     public void addNescau() {
         System.out.println("Adicionando mais Nescau...");
     }

@@ -1,17 +1,18 @@
 package br.inatel.luizfilipels.heranca;
 
+import br.inatel.luizfilipels.heranca.brownie.BrownieCafe;
 import br.inatel.luizfilipels.heranca.brownie.BrownieNescau;
+import br.inatel.luizfilipels.heranca.comprador.Comprador;
 
 public class Main {
     public static void main(String[] args) {
         BrownieNescau bn = new BrownieNescau("Brownie de Nescau", 30, "Nescau");
+        BrownieCafe bc = new BrownieCafe("Brownie de Cafe", 25, "Cafe");
+        Comprador comprador = new Comprador("Comprador", 1000.55);
 
-        System.out.println("--- Loja de Brownie ---");
+        comprador.comprarBrownie(bc);
+        comprador.comprarBrownie(bn);
 
-        bn.addCarrinhoDeCompra();
 
-        bn.addNescau();
-
-        bn.calculaCarrinho();
     }
 }

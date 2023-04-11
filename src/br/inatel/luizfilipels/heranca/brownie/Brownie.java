@@ -18,4 +18,16 @@ public class Brownie {
     public void calculaCarrinho() {
         System.out.println("Calculando o item: " + nome + " -- Preço: " + preco);
     }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public double getPreco() {
+        return preco;
+    }
+
+    public String getSabor() {
+        return sabor;
+    }
 }
